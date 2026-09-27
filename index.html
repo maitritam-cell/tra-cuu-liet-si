@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tra cứu hồ sơ liệt sĩ.">
+  <title>Tra cứu hồ sơ liệt sĩ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="seal" aria-hidden="true">✦</div>
+      <p class="eyebrow">CỔNG THÔNG TIN</p>
+      <h1>Tra cứu hồ sơ liệt sĩ</h1>
+      <p class="intro">Nhập họ tên để tìm và mở hồ sơ PDF.</p>
+    </header>
+
+    <section class="search-card" aria-labelledby="search-title">
+      <h2 id="search-title">Tìm hồ sơ</h2>
+      <form id="search-form" role="search">
+        <label for="name-search">Họ và tên</label>
+        <div class="search-row">
+          <input id="name-search" name="name" type="search" placeholder="Ví dụ: Nguyễn Văn An" autocomplete="name" spellcheck="false">
+          <button class="button button-primary" type="submit">Tra cứu</button>
+        </div>
+        <p class="hint">Có thể nhập có dấu hoặc không dấu.</p>
+      </form>
+      <div id="status" class="status" role="status" aria-live="polite">Sẵn sàng tra cứu.</div>
+      <div id="results" class="results" aria-label="Kết quả tra cứu"></div>
+    </section>
+    <footer>Thông tin hồ sơ được cung cấp bởi đơn vị quản lý dữ liệu.</footer>
+  </main>
+</body>
+</html>
